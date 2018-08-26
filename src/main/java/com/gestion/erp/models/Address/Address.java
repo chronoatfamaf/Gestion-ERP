@@ -1,4 +1,4 @@
-package com.gestion.erp.models;
+package com.gestion.erp.models.Address;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,8 +10,7 @@ import javax.persistence.Id;
 @Builder
 @AllArgsConstructor
 public class Address {
-    @Id
-    private Integer id;
+    @Id private Integer id;
     private String addressLine1;
     private String addressLine2;
     private String city;

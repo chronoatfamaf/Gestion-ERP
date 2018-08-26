@@ -1,4 +1,4 @@
-package com.gestion.erp.models;
+package com.gestion.erp.models.Payment;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Builder
 @AllArgsConstructor
 public class Payment {
-    @Id
-    private Integer id;
+    @Id private Integer id;
     private BigDecimal amount;
+    private PaymentType paymentType;
 }
